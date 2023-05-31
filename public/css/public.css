@@ -1,0 +1,214 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    padding: 0;
+    background-color: white;
+}
+
+.content-wrapper {
+    margin-top: 64px;
+}
+
+.nav-link.active, .nav-link:hover {
+    background-color: #EF820D;
+    color: white!important;
+}
+
+.nav-link {
+    padding: 20px 15px!important;
+    font-weight: 500;
+}
+
+.home-banner {
+    color: white;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.95)), url(../img/home-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.home-banner__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.primary-color-tr {
+    color: #EF820D;
+}
+
+.contact-information {
+    background-color: #EF820D;
+    color: white;
+}
+
+.card-square {
+    color: white;
+    aspect-ratio: 1 / 1;
+}
+
+.card-square img {
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#services .card-square img {
+    filter: grayscale(100%) brightness(50%);
+    transition: 0.5s filter;
+}
+
+#services .card-square img:hover {
+    filter: grayscale(0%) brightness(60%);
+}
+
+.card-txt {
+    pointer-events: none;
+    width: 100%;
+    padding: 20px;
+    z-index: 2;
+    position: absolute;
+}
+
+.footer-icon {
+    width: 35px;
+    height: 35px;
+}
+
+#contact-form input, #contact-form textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #6c757d;
+    padding: 20px;
+}
+
+h2.small {
+    font-size: 22px;
+}
+
+iframe {
+    min-height: 300px;
+}
+
+h1.small-primary {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #EF820D;
+}
+
+.img-square {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.employee-info {
+    border-bottom: 1px solid #EF820D;
+}
+
+a {
+    text-decoration: none;
+    color: #EF820D;
+}
+
+a:hover {
+    color: #EF820D;
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+}
+
+.navbar-toggler[aria-expanded="true"] .open-navbar {
+    display: none;
+}
+
+.navbar-toggler[aria-expanded="false"] .open-navbar {
+    display: block;
+}
+
+.navbar-toggler[aria-expanded="false"] .close-navbar {
+    display: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .close-navbar {
+    display: block;
+}
+
+.navbar-brand img {
+    height: 64px;
+}
+
+.primary-button {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: #EF820D;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+.message-send {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: #0cbd23;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    margin-top: 1%;
+    text-align: center;
+    display: none;
+    
+}
+
+#messageSend{
+    display: none;
+}
+
+
+.primary-button:hover {
+    background-color: #cf710b;
+    color: white;
+}
+
+.secondary-button {
+    color: #EF820D;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #EF820D;
+    background-color: transparent;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.secondary-button:hover {
+    color: #cf710b;
+    border: 1px solid #cf710b;
+}
+
+.login-container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
