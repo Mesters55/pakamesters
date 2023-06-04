@@ -60,7 +60,8 @@ $positions = $query->fetchAll();
         <div class="card-body">
             <div class="form-group mb-3">
                 <label for="name">Vārds <span class="text-danger">*</span></label> <!-- text-danger automātiski iedod sarkanu krāsu tekstam !-->
-                <input type="text" class="form-control <?php echo (! empty($formErrors['name'])) ? 'is-invalid' : ''; ?>" value="<?php echo $name; ?>" name="name" id="name" placeholder="Ievadi vārdu">
+                <input type="text" class="form-control <?php echo (! empty($formErrors['name'])) 
+                ? 'is-invalid' : ''; ?>" value="<?php echo $name; ?>" name="name" id="name" placeholder="Ievadi vārdu">
                 <span class="invalid-feedback"><?php echo $formErrors['name'] ?></span>
                  <!-- Tiek izmantots iepriekš nodefinētais erorrs, savstarpēji strādā ar pārbaudi iekš (1)!-->
                  <!-- Attiecīgi tiek izvadīts error msg, no (2) kas iepriekš definēts !-->

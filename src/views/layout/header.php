@@ -29,12 +29,20 @@
             </button>
             <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a class="nav-link home <?= str_contains($currentPage, 'public/index') ? "active" : '' ?>" href="<?= str_contains($currentPage, 'public/index') ? "#home" : '/pakagaladarbs/public/index.php' ?>">Sākums</a>
-                    <a class="nav-link about-us" href="<?= str_contains($currentPage, 'public/index') ? "#about-us" : '/pakagaladarbs/public/index.php#about-us' ?>">Par mums</a>
-                    <a class="nav-link services" href="<?= str_contains($currentPage, 'public/index') ? "#services" : '/pakagaladarbs/public/index.php#services' ?>">Pakalpojumi</a>
-                    <a class="nav-link employees <?= str_contains($currentPage, 'public/employees') ? "active" : '' ?>" href="<?= str_contains($currentPage, 'public/index') ? "#employees" : '/pakagaladarbs/public/index.php#employees' ?>">Komanda</a>
-                    <a class="nav-link reviews" href="<?= str_contains($currentPage, 'public/index') ? "#reviews" : '/pakagaladarbs/public/index.php#reviews' ?>">Atsauksmes</a>
-                    <a class="nav-link <?= str_contains($currentPage, 'public/contact-us') ? "active" : '' ?>" href="/pakagaladarbs/src/views/public/contact-us.php">Kontakti</a>
+                    <a class="nav-link home <?= str_contains($currentPage, 'public/index') ?
+                     "active" : '' ?>" href="<?= str_contains($currentPage, 'public/index') ?
+                      "#home" : '/pakagaladarbs/public/index.php' ?>">Sākums</a>
+                    <a class="nav-link about-us" href="<?= str_contains($currentPage, 'public/index') 
+                    ? "#about-us" : '/pakagaladarbs/public/index.php#about-us' ?>">Par mums</a>
+                    <a class="nav-link services" href="<?= str_contains($currentPage, 'public/index') 
+                    ? "#services" : '/pakagaladarbs/public/index.php#services' ?>">Pakalpojumi</a>
+                    <a class="nav-link employees <?= str_contains($currentPage, 'public/employees') 
+                    ? "active" : '' ?>" href="<?= str_contains($currentPage, 'public/index') 
+                    ? "#employees" : '/pakagaladarbs/public/index.php#employees' ?>">Komanda</a>
+                    <a class="nav-link reviews" href="<?= str_contains($currentPage, 'public/index') 
+                    ? "#reviews" : '/pakagaladarbs/public/index.php#reviews' ?>">Atsauksmes</a>
+                    <a class="nav-link <?= str_contains($currentPage, 'public/contact-us') ? "active" : '' 
+                    ?>" href="/pakagaladarbs/src/views/public/contact-us.php">Kontakti</a>
                     <!-- Sesijas sākums, respektivi ja ielogojas tad navigācijas joslā parādas atsevišķi vēl viena sadaļa "Admin" !-->
                     <?php 
                     if (! isset($_SESSION)) {
