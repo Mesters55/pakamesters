@@ -23,13 +23,12 @@ if ($_FILES["fileToUpload"]["error"] === 0) {
         $formErrors["img"] .= "Fails nav attēls. <br />";
     }
 
-    
     if (file_exists($targetFileDir)) {
         $formErrors["img"] .= "Fails jau pastāv. <br />";
     }
 
     // Pārbauda attēla izmēru
-    if ($_FILES["fileToUpload"]["size"] > 500000) {
+    if ($_FILES["fileToUpload"]["size"] > 5000000) {
         $formErrors["img"] .= "Fails ir pārāk liels. <br />";
     }
 

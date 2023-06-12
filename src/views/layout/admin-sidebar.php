@@ -20,7 +20,7 @@
 
 <body>
     <div class="d-flex">
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark vh-100 sticky-top" style="width: 280px;">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white  vh-100 sticky-top" style="width: 280px; background-color: #EF820D;">
             <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <span class="fs-4">SIA "PAKA"</span>
             </a>
